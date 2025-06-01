@@ -1,9 +1,10 @@
-
+#Prompt for task details
 task = input("Enter your task: ")
-time_bound = input("is it time-bound? (yes or no): ").lower()
 priority = input("priority (high, medium, low): ").lower()
+time_bound = input("is it time-bound? (yes or no): ").lower()
 
 
+#process the task
 match priority:
     case "high":
         message = f"Reminder: '{task}' is a high priority task"
@@ -20,5 +21,5 @@ else:
     message += "Consider completing the code"
 
 
-print("\nReminder:",message)
+print(f"Reminder:{message}")
     
