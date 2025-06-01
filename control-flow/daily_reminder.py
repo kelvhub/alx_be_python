@@ -1,6 +1,7 @@
-task = input("Enter your task:").lower()
-time_bound = input("is it time-bound? (yes or no):").lower()
-priority = input("priority (high, medium, low):").lower()
+
+task = input("Enter your task: ")
+time_bound = input("is it time-bound? (yes or no): ").lower()
+priority = input("priority (high, medium, low): ").lower()
 
 
 match priority:
@@ -15,7 +16,9 @@ match priority:
 
 if time_bound == 'yes':
     message += "This task requires an immediate attention today!"
+else:
+    message += "Consider completing the code"
 
 
-print(message)
+print("\nReminder:",message)
     
