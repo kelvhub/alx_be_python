@@ -1,8 +1,5 @@
 def perform_operation(num1: float, num2: float, operation: str):
-    """
-    Performs basic arithmetic operations: add, subtract, multiply, divide.
-    Returns result or an error message for invalid operations or division by zero.
-    """
+    
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
