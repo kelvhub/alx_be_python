@@ -28,11 +28,15 @@ def main():
                 print(f"'{item}' not found in the shopping list.")
         elif choice == '3':
             if shopping_list:
-                print(" Shopping List:")
+                print("Shopping List:")
                 for i, item in enumerate(shopping_list, start=1):
                     print(f"{i}. {item}")
             else:
+
                 print("Your shopping list is currently empty.")
+
+            pass
+            
         elif choice == '4':
             print("Goodbye!")
             break
